@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple_Calc</string>
+    <string name="hField">How to use Calc: enter your number, press + or - to see result</string>
+    <string name="n1">Edit number 1</string>
+    <string name="n2">Edit number 2</string>
+    <string name="result">result!</string>
+    <string name="minus">кнопка -</string>
+    <string name="plus">кнопка +</string>
+</resources>

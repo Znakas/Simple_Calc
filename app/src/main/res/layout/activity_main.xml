@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="thinkmobile.com.simple_calc.MainActivity"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/darkrey"
+        android:textSize="@dimen/small"
+        android:text="@string/hField"  />
+    <EditText
+        android:id="@+id/n1"
+        style="@style/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/plus"/>
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n1"
+        android:layout_alignParentRight="true"
+        android:text="@string/minus"/>
+
+    <EditText
+        android:id="@+id/n2"
+        style="@style/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/plus"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/n2"
+        android:layout_marginTop="@dimen/indent"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/indent"
+        android:text="@string/result"/>
+</RelativeLayout>
